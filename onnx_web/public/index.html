@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ML Game Predictor</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Prediccion de juego (ONNX en Node)</h1>
+
+    <div class="card">
+      <h2>Seleccion</h2>
+
+      <div class="grid">
+        <label>
+          Season type
+          <select id="season_type"></select>
+        </label>
+
+        <label>
+          Home team abbreviation
+          <select id="team_abbreviation_home"></select>
+        </label>
+
+        <label>
+          Home team name
+          <select id="team_name_home"></select>
+        </label>
+
+        <label>
+          Away team abbreviation
+          <select id="team_abbreviation_away"></select>
+        </label>
+
+        <label>
+          Away team name
+          <select id="team_name_away"></select>
+        </label>
+
+        <label>
+          Season id
+          <input id="season_id" type="number" step="1" />
+        </label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Estadisticas (numericas)</h2>
+      <p class="muted">Campos vacios se mandan como 0</p>
+      <div id="numericFields" class="grid"></div>
+    </div>
+
+    <div class="actions">
+      <button id="btnPredict">Predecir</button>
+    </div>
+
+    <div id="result" class="card hidden"></div>
+    <div id="error" class="card error hidden"></div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+* { box-sizing: border-box; font-family: system-ui, Arial, sans-serif; }
+body { margin: 0; background: #0b0f17; color: #e8eefc; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 24px; }
+h1 { margin: 0 0 16px; font-size: 22px; }
+h2 { margin: 0 0 12px; font-size: 16px; }
+.card { background: #121a2a; border: 1px solid #22304a; border-radius: 12px; padding: 16px; margin: 12px 0; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #cfe0ff; }
+select, input { padding: 10px; border-radius: 10px; border: 1px solid #2a3a59; background: #0f1524; color: #e8eefc; }
+.actions { margin: 14px 0; }
+button { padding: 12px 16px; border-radius: 12px; border: 0; background: #2f6bff; color: white; font-weight: 700; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+.hidden { display: none; }
+.muted { margin: 0 0 12px; color: #9bb0d6; font-size: 13px; }
+.error { border-color: #ff4d4d; background: #2a1212; }
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
