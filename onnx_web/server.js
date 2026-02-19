@@ -103,8 +103,7 @@ app.get("/api/meta", (req, res) => {
     res.json({
       dropdowns,
       defaults,
-      numericFields: schema.num_cols,
-      stringFields: schema.cat_cols,
+ 
     });
   } catch (e) {
     res.status(500).json({ error: String(e.message || e) });
