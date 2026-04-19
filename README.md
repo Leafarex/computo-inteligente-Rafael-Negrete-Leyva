@@ -1,1 +1,0 @@
-# computo-inteligente-Rafael-Negrete-Leyva
