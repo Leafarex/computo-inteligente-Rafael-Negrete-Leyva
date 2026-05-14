@@ -4,38 +4,48 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7aa68d3-8413-4107-9b74-bf79dcd1b7e6" name="Changes" comment="" />
+    <list default="true" id="e7aa68d3-8413-4107-9b74-bf79dcd1b7e6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.vectorstore.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/9.vectorstore.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="100013" />
+    <option name="cachedIndexableFilesCount" value="3" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Leafarex"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Leafarex&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Leafarex/computo-inteligente-Rafael-Negrete-Leyva.git",
-    "accountId": "cca5d0ac-ae09-426b-b465-c4e3daec18be"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Leafarex/computo-inteligente-Rafael-Negrete-Leyva.git&quot;,
+    &quot;accountId&quot;: &quot;cca5d0ac-ae09-426b-b465-c4e3daec18be&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="3D8kTNKCQCyA0R0MqGXfcMAVlpW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,7 +61,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "Participación---abril-30",
+    "git-widget-placeholder": "Vector-Stores-y-Búsqueda-Semántica",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/Rafael/Documents/GitHub/computo-inteligente-Rafael-Negrete-Leyva",
     "node.js.detected.package.eslint": "true",
@@ -78,6 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1777671090724</updated>
       <workItem from="1777671099629" duration="2487000" />
+      <workItem from="1778397106475" duration="4054000" />
     </task>
     <servers />
   </component>
