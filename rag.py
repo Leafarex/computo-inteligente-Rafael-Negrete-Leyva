@@ -476,23 +476,23 @@ Do not mention scores unless the user asks for them.
         """
         resolved_config = resolve_config(config)
 
-        print("Loading documents...")
+        print("Cargando documentos...")
         docs = load_documents()
-        print(f"  Loaded {len(docs)} documents")
+        print(f"  Se cargaron {len(docs)} documentos")
 
-        print("Splitting into chunks...")
+        print("Partiendo en pedacitos masticables...")
         chunks = split_documents(
             docs,
             chunk_size=resolved_config["chunk_size"],
             chunk_overlap=resolved_config["chunk_overlap"],
         )
-        print(f"  Created {len(chunks)} chunks")
+        print(f"  Se crearon {len(chunks)} predacitos")
 
         embedding_model = SentenceTransformer(resolved_config["embedding_model"])
 
-        print("Building FAISS index...")
+        print("Construyendo el índice FAISS...")
         index = build_index(chunks, embedding_model)
-        print(f"  Indexed {index.ntotal} vectors (dim={index.d})")
+        print(f"  Se indizaron {index.ntotal} vectores (de dimensión {index.d})")
 
         client_kwargs = {}
         if resolved_config["api_key"]:
@@ -501,5 +501,5 @@ Do not mention scores unless the user asks for them.
             client_kwargs["base_url"] = resolved_config["base_url"]
         client = OpenAI(**client_kwargs)
 
-        print("Ready!\n")
+        print("¡Listo!\n")
         return cls(index, embedding_model, chunks, client, resolved_config)

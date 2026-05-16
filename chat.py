@@ -17,12 +17,12 @@ from dotenv import load_dotenv
 
 WELCOME = """
 ╔══════════════════════════════════════════════════════╗
-║           Personal Digital Assistant                 ║
+║           Asistente Personal Digital                 ║
 ║                                                      ║
-║  Ask me about emails, notes, SMS, and calendar.      ║
-║  Type '/clear' to reset conversation history.        ║
-║  Try: what's the address for Laura's surprise party? ║
-║  Type '/exit' to leave.                              ║
+║  Pregúúúntame sobre emails, notas, SMS y calendario. ║
+║  Tipea '/clear' para borrar el historial.            ║
+║  Cálale: ¿En qué dirección festejaremos a Laura?     ║
+║  Tipea '/exit' para salir a afuera desde dentro.     ║
 ╚══════════════════════════════════════════════════════╝
 """
 
@@ -41,7 +41,7 @@ def load_config_from_env() -> dict[str, str | None]:
 
 
 def main():
-    print("Initializing assistant...")
+    print("Iniciando...")
     config = load_config_from_env()
     assistant = Assistant.from_config(config)
     subprocess.run('cls' if os.name == 'nt' else 'clear')
@@ -52,24 +52,24 @@ def main():
         try:
             question = input("You: ").strip()
         except (KeyboardInterrupt, EOFError):
-            print("\nGoodbye!")
+            print("\nSi te vi... ¡Ni me acuerdo!")
             break
 
         if not question:
             continue
 
         if question.lower() == "/exit":
-            print("Goodbye!")
+            print("Si te vi... ¡Ni me acuerdo!")
             break
 
         if question.lower() == "/clear":
             assistant.clear_history()
             subprocess.run('cls' if os.name == 'nt' else 'clear')
-            print("\nConversation history cleared.\n")
+            print("\nSe borró todo el chat.\n")
             continue
 
         response = assistant.ask(question)
-        print(f"\nAssistant: {response}\n")
+        print(f"\nAsistente: {response}\n")
 
 
 if __name__ == "__main__":
