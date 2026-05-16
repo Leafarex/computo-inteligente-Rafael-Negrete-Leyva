@@ -64,7 +64,7 @@ def main():
 
         if question.lower() == "/clear":
             assistant.clear_history()
-            os.system('cls' if os.name == 'nt' else 'clear')
+            subprocess.run('cls' if os.name == 'nt' else 'clear')
             print("\nConversation history cleared.\n")
             continue
 
