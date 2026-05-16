@@ -44,7 +44,7 @@ def main():
     print("Initializing assistant...")
     config = load_config_from_env()
     assistant = Assistant.from_config(config)
-    os.system('cls' if os.name == 'nt' else 'clear')
+    subprocess.run('cls' if os.name == 'nt' else 'clear')
 
     print(WELCOME)
 
